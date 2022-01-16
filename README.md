@@ -1,4 +1,4 @@
-# Elesctron sender WhatsApp Application
+# Electron sender WhatsApp Application
 
 **Clone and run for a quick way to see Electron in action.**
 
