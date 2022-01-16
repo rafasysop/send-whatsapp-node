@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+<div class="container">
+  <h1 class="text-center">App de Envio de Mensagem de WhatssApp</h1>
+
+  <form action="/whats" method="post">
+
+    <label for="number" class="label">
+      Enviar mensagem para o número:
+      <input required minlength="13" type="tel" placeholder="ex: 5561998403732" class="form-control" name='number' />
+      <pre>Obs: 55 Codigo do País, 61 é o DDD, 998403732 é o numero.</pre>
+    </label>
+    <br />
+    <br />
+    <label for="message" class="label">
+      Enviar mensagem para o número:
+      <textarea required type="text" class="form-control" name='message' placeholder="Digite aqui a sua mensagem..." ></textarea>
+    </label>
+    <br />
+    <br />
+    <button type="submit" class="btn btn-primary btn-lg text-right">Enviar mensagem</button>
+  </form>
+</div>
+<%- include("partials/footer.ejs") %>
